@@ -158,3 +158,40 @@ footer {
   margin-bottom: 0;
 }
 
+.lista-padrao {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.lista-padrao > li {
+  background: var(--card-soft);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 0.6rem 0;
+}
+
+.lista-interna {
+  margin: 0.8rem 0 0 1.2rem;
+  padding-left: 1rem;
+}
+
+.lista-interna li {
+  margin-bottom: 0.4rem;
+}
+
+.tipcontent {
+  margin-top: 0.8rem;
+  padding: 0.9rem;
+  border-radius: 8px;
+  background: rgba(13, 17, 23, 0.7);
+  border: 1px solid var(--border);
+}
+
+.tipcontent p {
+  margin: 0 0 0.7rem;
+}
+
+.tipcontent p:last-child {
+  margin-bottom: 0;
+}
