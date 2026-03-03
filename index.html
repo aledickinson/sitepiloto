@@ -3,36 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título da Página</title>
+  <title>Minha Central de Estudos</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Título da Página</h1>
-    <p>Subtítulo ou descrição curta</p>
+    <h1>Minha Central de Estudos</h1>
+    <p>Escolha um conteúdo e abra a página correspondente</p>
   </header>
 
   <main>
     <section>
-      <h2>Seção 1</h2>
-      <div class="bloco">
-        Conteúdo principal aqui
+      <h2>Conteúdos</h2>
+
+      <div class="grid-cards">
+        <a href="calendario_bike.html" class="card-link">
+          <h3>Calendário Bike</h3>
+          <p>Rotina semanal de treino focada em queima de gordura e constância.</p>
+        </a>
+
+        <a href="canto.html" class="card-link">
+          <h3>Treino Vocal</h3>
+          <p>Plano de canto com foco em respiração, potência e técnica.</p>
+        </a>
+
+        <a href="fisica.html" class="card-link">
+          <h3>Física & Mecânica Quântica</h3>
+          <p>Plano de 12 semanas para revisar base matemática e avançar em MQ.</p>
+        </a>
+
+        <a href="plano_treino_12_semanas.html" class="card-link">
+          <h3>Plano de Treino 12 Semanas</h3>
+          <p>Treino estruturado para peito, braço e core, com progressão simples.</p>
+        </a>
       </div>
     </section>
 
     <section>
-      <h2>Seção 2</h2>
-      <details>
-        <summary>Ver detalhes</summary>
-        <div class="conteudo-oculto">
-          Conteúdo expandido aqui
-        </div>
-      </details>
+      <h2>Como funciona</h2>
+      <div class="bloco">
+        Clique em qualquer card acima para abrir a página do conteúdo.
+      </div>
     </section>
   </main>
 
   <footer>
-    <span id="rodape-texto">Rodapé padrão</span>
+    <span id="rodape-texto">Minha Central de Estudos</span>
   </footer>
 
   <script src="script.js"></script>
