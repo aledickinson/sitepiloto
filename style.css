@@ -214,3 +214,40 @@ code {
   border: 1px solid var(--border);
   overflow-x: auto;
 }
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  background: var(--card-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem;
+  color: var(--text);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.28);
+}
+
+.card-link h3 {
+  margin: 0 0 0.6rem;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.card-link p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+}
