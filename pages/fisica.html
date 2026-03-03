@@ -4,491 +4,724 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plano de 12 Semanas - Física & Mecânica Quântica</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-    body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #0d1117, #1b2735); color: #e6edf3; margin: 0; padding: 0; overflow-x: hidden; }
-    header { text-align: center; padding: 3rem 1rem; background: linear-gradient(90deg, #1f6feb, #2ea043); color: #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.6); animation: fadeInDown 1.2s ease; }
-    h1 { font-size: 2.2rem; margin: 0; letter-spacing: 1px; }
-    p { font-size: 1.1rem; opacity: 0.9; }
-    main { max-width: 900px; margin: 2rem auto; padding: 1rem; animation: fadeInUp 1.2s ease; }
-    section { background: rgba(33,38,45,0.9); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; box-shadow: 0 0 15px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s; }
-    section:hover { transform: translateY(-5px); box-shadow: 0 0 25px rgba(88,166,255,0.5); }
-    h2 { color: #58a6ff; border-left: 4px solid #58a6ff; padding-left: 0.8rem; margin-bottom: 1rem; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { background: rgba(45,51,59,0.8); margin: .6rem 0; padding: 1rem; border-radius: 10px; transition: background 0.3s; position: relative; }
-    li:hover { background: rgba(65,73,83,0.9); }
-    .tooltip { visibility: hidden; opacity: 0; width: 260px; background-color: #2d333b; color: #e6edf3; text-align: left; border-radius: 8px; padding: 10px; position: absolute; z-index: 1; top: 110%; left: 50%; transform: translateX(-50%); box-shadow: 0 0 10px rgba(0,0,0,0.5); transition: opacity 0.3s; font-size: 0.9rem; }
-    li:hover .tooltip { visibility: visible; opacity: 1; }
-    strong { color: #d2a8ff; }
-    code { background: #2d333b; color: #79c0ff; padding: 2px 6px; border-radius: 5px; }
-    pre { white-space: pre-wrap; }
-    footer { text-align: center; padding: 1.5rem; background: #161b22; color: #8b949e; font-size: 0.9rem; border-top: 1px solid #30363d; }
-    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Plano de 12 Semanas - Física & Mecânica Quântica</h1>
     <p>Roteiro para revisar matemática, física clássica e entrar de vez em mecânica quântica ⚛️</p>
   </header>
+
   <main>
-    <!-- Semana 1 -->
+    <div class="nav-topo">
+      <a href="index.html" class="botao-home">← Voltar para Home</a>
+    </div>
+
     <section>
       <h2>Semana 1 — Derivadas e Integrais Básicas 📐</h2>
-      <ul>
-        <li><strong>Dia 1–2:</strong> Funções e gráficos (polinomiais, exponenciais, trigonométricas).
-          <div class="tooltip">
-            <p><strong>Exemplo:</strong></p>
-            <pre><code>f(x) = x^2,   g(x) = sen(x),   h(x) = e^x
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 1–2:</strong> Funções e gráficos (polinomiais, exponenciais, trigonométricas).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p><strong>Exemplo:</strong></p>
+              <pre><code>f(x) = x^2,   g(x) = sen(x),   h(x) = e^x
 • Identifique zeros, máximo/mínimo visualmente
 • Relacione inclinação do gráfico com variação da função</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 3:</strong> Definição de derivada como taxa de variação.
-          <div class="tooltip">
-            <pre><code>Definição:
+        <li>
+          <strong>Dia 3:</strong> Definição de derivada como taxa de variação.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Definição:
 f'(x) = lim(Δx→0) [f(x + Δx) - f(x)] / Δx
 
 Intuição:
 • "Velocidade" da função naquele ponto</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 4:</strong> Regras de derivação (soma, produto, quociente, cadeia).
-          <div class="tooltip">
-            <pre><code>d/dx (x^3) = 3x^2
+        <li>
+          <strong>Dia 4:</strong> Regras de derivação (soma, produto, quociente, cadeia).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>d/dx (x^3) = 3x^2
 d/dx (sen x) = cos x
 d/dx (e^x) = e^x
 d/dx (ln x) = 1/x</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 5:</strong> Introdução a integrais indefinidas.
-          <div class="tooltip">
-            <pre><code>∫ x dx = x^2 / 2 + C
+        <li>
+          <strong>Dia 5:</strong> Introdução a integrais indefinidas.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>∫ x dx = x^2 / 2 + C
 ∫ cos x dx = sen x + C
 ∫ e^x dx = e^x + C</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 6:</strong> Integrais definidas e área sob a curva.
-          <div class="tooltip">
-            <pre><code>∫[a→b] f(x) dx = área sob o gráfico de f entre a e b
+        <li>
+          <strong>Dia 6:</strong> Integrais definidas e área sob a curva.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>∫[a→b] f(x) dx = área sob o gráfico de f entre a e b
 
 Exemplo:
 ∫[0→1] x^2 dx = [x^3/3]_0^1 = 1/3</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 7:</strong> Lista de exercícios mistos (derivar e integrar).
-          <div class="tooltip">
-            <p>Monte 10 exercícios mistos e resolva passo a passo. Refazer sem colar depois.</p>
-          </div>
+        <li>
+          <strong>Dia 7:</strong> Lista de exercícios mistos (derivar e integrar).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Monte 10 exercícios mistos e resolva passo a passo. Refazer sem colar depois.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 2 -->
     <section>
       <h2>Semana 2 — Álgebra Linear Aplicada 🧩</h2>
-      <ul>
-        <li><strong>Dia 8:</strong> Vetores em ℝ² e ℝ³ (módulo, direção, soma).
-          <div class="tooltip">
-            <pre><code>v = (vx, vy, vz)
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 8:</strong> Vetores em ℝ² e ℝ³ (módulo, direção, soma).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>v = (vx, vy, vz)
 |v| = √(vx² + vy² + vz²)
 Soma: u + v = (ux + vx, ...)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 9:</strong> Matrizes, multiplicação e transposta.
-          <div class="tooltip">
-            <pre><code>A = [[1, 2],
+        <li>
+          <strong>Dia 9:</strong> Matrizes, multiplicação e transposta.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>A = [[1, 2],
      [3, 4]]
 
 Aᵀ = [[1, 3],
       [2, 4]]</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 10:</strong> Sistemas lineares e inversa de matriz 2x2.
-          <div class="tooltip">
-            <pre><code>A = [[a, b],
+        <li>
+          <strong>Dia 10:</strong> Sistemas lineares e inversa de matriz 2x2.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>A = [[a, b],
      [c, d]]
 
 det(A) = ad - bc
 Se det(A) ≠ 0, A⁻¹ existe.</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 11:</strong> Autovalores e autovetores (introdução).
-          <div class="tooltip">
-            <pre><code>Av = λv
+        <li>
+          <strong>Dia 11:</strong> Autovalores e autovetores (introdução).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Av = λv
 • λ é autovalor
 • v é autovetor associado</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 12:</strong> Diagonalização (ideia geral).
-          <div class="tooltip">
-            <pre><code>A = PDP⁻¹
+        <li>
+          <strong>Dia 12:</strong> Diagonalização (ideia geral).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>A = PDP⁻¹
 • D: matriz diagonal (autovalores)
 • Colunas de P: autovetores</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 13:</strong> Matrizes hermitianas (visão inicial).
-          <div class="tooltip">
-            <pre><code>A hermitiana: A† = A
+        <li>
+          <strong>Dia 13:</strong> Matrizes hermitianas (visão inicial).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>A hermitiana: A† = A
 • Autovalores reais
 • Muito usada em MQ como observáveis</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 14:</strong> Exercícios com vetores, matrizes e autovalores.
-          <div class="tooltip">
-            <p>Resolva 5 sistemas lineares, 3 problemas de autovalores e revise a teoria.</p>
-          </div>
+        <li>
+          <strong>Dia 14:</strong> Exercícios com vetores, matrizes e autovalores.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Resolva 5 sistemas lineares, 3 problemas de autovalores e revise a teoria.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 3 -->
     <section>
       <h2>Semana 3 — Números Complexos e Ondas 🌊</h2>
-      <ul>
-        <li><strong>Dia 15:</strong> Forma algébrica: a + bi, módulo e conjugado.
-          <div class="tooltip">
-            <pre><code>z = a + bi
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 15:</strong> Forma algébrica: a + bi, módulo e conjugado.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>z = a + bi
 |z| = √(a² + b²)
 Conjugado: z* = a - bi</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 16:</strong> Forma polar e exponencial.
-          <div class="tooltip">
-            <pre><code>z = r (cos θ + i sen θ)
+        <li>
+          <strong>Dia 16:</strong> Forma polar e exponencial.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>z = r (cos θ + i sen θ)
 z = r e^{iθ}
 e^{iθ} = cos θ + i sen θ</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 17:</strong> Operações com complexos (produto, divisão, potenciação simples).
-          <div class="tooltip">
-            <pre><code>(a + bi)(c + di) = (ac - bd) + (ad + bc)i</code></pre>
-          </div>
+        <li>
+          <strong>Dia 17:</strong> Operações com complexos (produto, divisão, potenciação simples).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>(a + bi)(c + di) = (ac - bd) + (ad + bc)i</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 18:</strong> Ondas: amplitude, frequência, comprimento de onda.
-          <div class="tooltip">
-            <pre><code>y(x,t) = A sen(kx - ωt)
+        <li>
+          <strong>Dia 18:</strong> Ondas: amplitude, frequência, comprimento de onda.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>y(x,t) = A sen(kx - ωt)
 k = 2π/λ     ω = 2πf</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 19:</strong> Interferência construtiva e destrutiva.
-          <div class="tooltip">
-            <pre><code>Construtiva: fase em fase → máximo
+        <li>
+          <strong>Dia 19:</strong> Interferência construtiva e destrutiva.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Construtiva: fase em fase → máximo
 Destrutiva: defasagem de π → mínimo</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 20:</strong> Representação complexa de ondas.
-          <div class="tooltip">
-            <pre><code>ψ(x,t) = A e^{i(kx - ωt)}
+        <li>
+          <strong>Dia 20:</strong> Representação complexa de ondas.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>ψ(x,t) = A e^{i(kx - ωt)}
 • Parte real/imag: seno e cosseno</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 21:</strong> Exercícios com ondas e complexos.
-          <div class="tooltip">
-            <p>Relacione frequência, período, λ e velocidade v = λf em 5 exemplos numéricos.</p>
-          </div>
+        <li>
+          <strong>Dia 21:</strong> Exercícios com ondas e complexos.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Relacione frequência, período, λ e velocidade v = λf em 5 exemplos numéricos.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 4 -->
     <section>
       <h2>Semana 4 — Mecânica Clássica Essencial 🚀</h2>
-      <ul>
-        <li><strong>Dia 22:</strong> Cinemática 1D: posição, velocidade, aceleração.
-          <div class="tooltip">
-            <pre><code>v = dx/dt
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 22:</strong> Cinemática 1D: posição, velocidade, aceleração.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>v = dx/dt
 a = dv/dt
 
 Movimento uniforme:
 x(t) = x₀ + vt</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 23:</strong> Leis de Newton e força resultante.
-          <div class="tooltip">
-            <pre><code>F = m a
+        <li>
+          <strong>Dia 23:</strong> Leis de Newton e força resultante.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>F = m a
 ΣF = m a
 
 Exemplo: queda livre (sem resistência do ar)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 24:</strong> Trabalho e energia cinética.
-          <div class="tooltip">
-            <pre><code>W = ∫ F · dx
+        <li>
+          <strong>Dia 24:</strong> Trabalho e energia cinética.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>W = ∫ F · dx
 Ec = (1/2) m v²</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 25:</strong> Energia potencial e conservação de energia.
-          <div class="tooltip">
-            <pre><code>Ep(gravitacional) = m g h
+        <li>
+          <strong>Dia 25:</strong> Energia potencial e conservação de energia.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Ep(gravitacional) = m g h
 Etotal = Ec + Ep = constante (sem dissipação)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 26:</strong> Momento linear e impulso.
-          <div class="tooltip">
-            <pre><code>p = m v
+        <li>
+          <strong>Dia 26:</strong> Momento linear e impulso.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>p = m v
 Impulso: J = ∫ F dt = Δp</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 27:</strong> Oscilador harmônico clássico.
-          <div class="tooltip">
-            <pre><code>F = -kx
+        <li>
+          <strong>Dia 27:</strong> Oscilador harmônico clássico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>F = -kx
 m d²x/dt² + kx = 0
 Solução: x(t) = A cos(ωt + φ)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 28:</strong> Exercícios de energia e oscilador.
-          <div class="tooltip">
-            <p>Resolva 3 problemas de mola e 3 de energia conservativa.</p>
-          </div>
+        <li>
+          <strong>Dia 28:</strong> Exercícios de energia e oscilador.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Resolva 3 problemas de mola e 3 de energia conservativa.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 5 -->
     <section>
       <h2>Semana 5 — Ondas, Probabilidade e Dupla Fenda 🎯</h2>
-      <ul>
-        <li><strong>Dia 29:</strong> Revisão de ondas e interferência.
-          <div class="tooltip">
-            <p>Compare padrões de interferência de ondas mecânicas e luz.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 29:</strong> Revisão de ondas e interferência.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Compare padrões de interferência de ondas mecânicas e luz.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 30:</strong> Experimento da dupla fenda (conceitual).
-          <div class="tooltip">
-            <p>Discuta padrão de interferência com partículas individuais (elétrons/fótons).</p>
-          </div>
+        <li>
+          <strong>Dia 30:</strong> Experimento da dupla fenda (conceitual).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Discuta padrão de interferência com partículas individuais (elétrons/fótons).</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 31:</strong> Introdução à interpretação probabilística.
-          <div class="tooltip">
-            <pre><code>|ψ(x)|² → densidade de probabilidade
+        <li>
+          <strong>Dia 31:</strong> Introdução à interpretação probabilística.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>|ψ(x)|² → densidade de probabilidade
 ∫ |ψ(x)|² dx = 1</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 32:</strong> Normalização de funções simples.
-          <div class="tooltip">
-            <pre><code>Exemplo:
+        <li>
+          <strong>Dia 32:</strong> Normalização de funções simples.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Exemplo:
 ψ(x) = A em [0, L]
 
 ∫[0→L] |A|² dx = 1 → A = 1/√L</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 33:</strong> Função de onda: significado físico.
-          <div class="tooltip">
-            <p>Discutir por que só |ψ|² é observável, não ψ em si.</p>
-          </div>
+        <li>
+          <strong>Dia 33:</strong> Função de onda: significado físico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Discutir por que só |ψ|² é observável, não ψ em si.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 34:</strong> Pacotes de onda (ideia).
-          <div class="tooltip">
-            <p>Superposição de ondas monocromáticas para representar uma partícula localizada.</p>
-          </div>
+        <li>
+          <strong>Dia 34:</strong> Pacotes de onda (ideia).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Superposição de ondas monocromáticas para representar uma partícula localizada.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 35:</strong> Exercícios conceituais da dupla fenda e probabilidade.
-          <div class="tooltip">
-            <p>Responder questões teóricas e croquis de padrões de interferência.</p>
-          </div>
+        <li>
+          <strong>Dia 35:</strong> Exercícios conceituais da dupla fenda e probabilidade.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Responder questões teóricas e croquis de padrões de interferência.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 6 -->
     <section>
       <h2>Semana 6 — Operadores e Relação de Incerteza 📊</h2>
-      <ul>
-        <li><strong>Dia 36:</strong> O que é um operador em MQ.
-          <div class="tooltip">
-            <pre><code>Operador: "regra" que age sobre funções
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 36:</strong> O que é um operador em MQ.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Operador: "regra" que age sobre funções
 Ex: derivada é um operador: D[f] = df/dx</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 37:</strong> Operador posição x̂ e momento p̂.
-          <div class="tooltip">
-            <pre><code>x̂ ψ(x) = x ψ(x)
+        <li>
+          <strong>Dia 37:</strong> Operador posição x̂ e momento p̂.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>x̂ ψ(x) = x ψ(x)
 p̂ ψ(x) = -i ħ dψ/dx</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 38:</strong> Comutadores [A, B].
-          <div class="tooltip">
-            <pre><code>[A, B] = AB - BA
+        <li>
+          <strong>Dia 38:</strong> Comutadores [A, B].
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>[A, B] = AB - BA
 [x̂, p̂] = i ħ</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 39:</strong> Relação de incerteza de Heisenberg.
-          <div class="tooltip">
-            <pre><code>Δx Δp ≥ ħ / 2</code></pre>
-          </div>
+        <li>
+          <strong>Dia 39:</strong> Relação de incerteza de Heisenberg.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Δx Δp ≥ ħ / 2</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 40:</strong> Operadores hermitianos como observáveis.
-          <div class="tooltip">
-            <p>Autovalores reais ↔ resultados possíveis de medidas físicas.</p>
-          </div>
+        <li>
+          <strong>Dia 40:</strong> Operadores hermitianos como observáveis.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Autovalores reais ↔ resultados possíveis de medidas físicas.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 41:</strong> Valor esperado de um observável.
-          <div class="tooltip">
-            <pre><code>&lt;A&gt; = ∫ ψ*(x) A ψ(x) dx</code></pre>
-          </div>
+        <li>
+          <strong>Dia 41:</strong> Valor esperado de um observável.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>&lt;A&gt; = ∫ ψ*(x) A ψ(x) dx</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 42:</strong> Exercícios com operadores e incerteza.
-          <div class="tooltip">
-            <p>Calcule comutadores simples e discuta implicações físicas.</p>
-          </div>
+        <li>
+          <strong>Dia 42:</strong> Exercícios com operadores e incerteza.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Calcule comutadores simples e discuta implicações físicas.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 7 -->
     <section>
       <h2>Semana 7 — Equação de Schrödinger 1D 📉</h2>
-      <ul>
-        <li><strong>Dia 43:</strong> Schrödinger dependente do tempo (forma geral).
-          <div class="tooltip">
-            <pre><code>i ħ ∂ψ/∂t = Ĥ ψ
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 43:</strong> Schrödinger dependente do tempo (forma geral).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>i ħ ∂ψ/∂t = Ĥ ψ
 Ĥ: operador Hamiltoniano (energia total)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 44:</strong> Hamiltoniano de partícula em 1D.
-          <div class="tooltip">
-            <pre><code>Ĥ = - (ħ² / 2m) (∂²/∂x²) + V(x)</code></pre>
-          </div>
+        <li>
+          <strong>Dia 44:</strong> Hamiltoniano de partícula em 1D.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Ĥ = - (ħ² / 2m) (∂²/∂x²) + V(x)</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 45:</strong> Separação de variáveis (tempo e espaço).
-          <div class="tooltip">
-            <pre><code>ψ(x,t) = φ(x) T(t)
+        <li>
+          <strong>Dia 45:</strong> Separação de variáveis (tempo e espaço).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>ψ(x,t) = φ(x) T(t)
 → Equação independente do tempo para φ(x)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 46:</strong> Poço de potencial infinito.
-          <div class="tooltip">
-            <pre><code>V(x) = 0 em (0,L), infinito fora
+        <li>
+          <strong>Dia 46:</strong> Poço de potencial infinito.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>V(x) = 0 em (0,L), infinito fora
 
 Soluções:
 φₙ(x) = √(2/L) sen(nπx/L)
 Eₙ = (n² π² ħ²)/(2mL²)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 47:</strong> Condições de contorno e quantização de energia.
-          <div class="tooltip">
-            <p>Entenda por que só certos valores de energia são permitidos.</p>
-          </div>
+        <li>
+          <strong>Dia 47:</strong> Condições de contorno e quantização de energia.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Entenda por que só certos valores de energia são permitidos.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 48:</strong> Poço finito (visão qualitativa).
-          <div class="tooltip">
-            <p>Explique qualitativamente o decaimento exponencial fora da região do poço.</p>
-          </div>
+        <li>
+          <strong>Dia 48:</strong> Poço finito (visão qualitativa).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Explique qualitativamente o decaimento exponencial fora da região do poço.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 49:</strong> Exercícios de poço infinito.
-          <div class="tooltip">
-            <p>Calcule Eₙ e probabilidades para n = 1, 2, 3 em exemplos numéricos.</p>
-          </div>
+        <li>
+          <strong>Dia 49:</strong> Exercícios de poço infinito.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Calcule Eₙ e probabilidades para n = 1, 2, 3 em exemplos numéricos.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 8 -->
     <section>
       <h2>Semana 8 — Oscilador Harmônico Quântico 🎼</h2>
-      <ul>
-        <li><strong>Dia 50:</strong> Revisão do oscilador clássico.
-          <div class="tooltip">
-            <p>Compare energia e período do sistema massa-mola com diferentes amplitudes.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 50:</strong> Revisão do oscilador clássico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Compare energia e período do sistema massa-mola com diferentes amplitudes.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 51:</strong> Equação de Schrödinger para V(x) = (1/2) m ω² x².
-          <div class="tooltip">
-            <p>Monte a equação e discuta a forma geral das soluções.</p>
-          </div>
+        <li>
+          <strong>Dia 51:</strong> Equação de Schrödinger para V(x) = (1/2) m ω² x².
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Monte a equação e discuta a forma geral das soluções.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 52:</strong> Espectro de energias do oscilador quântico.
-          <div class="tooltip">
-            <pre><code>Eₙ = ħω (n + 1/2),   n = 0,1,2,...</code></pre>
-          </div>
+        <li>
+          <strong>Dia 52:</strong> Espectro de energias do oscilador quântico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>Eₙ = ħω (n + 1/2),   n = 0,1,2,...</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 53:</strong> Ideia de operadores de subida e descida (a, a†).
-          <div class="tooltip">
-            <p>Entenda o papel de a e a† para gerar estados de energia.</p>
-          </div>
+        <li>
+          <strong>Dia 53:</strong> Ideia de operadores de subida e descida (a, a†).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Entenda o papel de a e a† para gerar estados de energia.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 54:</strong> Interpretação física do estado fundamental.
-          <div class="tooltip">
-            <p>Discuta por que não existe energia zero: energia de ponto zero.</p>
-          </div>
+        <li>
+          <strong>Dia 54:</strong> Interpretação física do estado fundamental.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Discuta por que não existe energia zero: energia de ponto zero.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 55:</strong> Forma qualitativa das funções de onda.
-          <div class="tooltip">
-            <p>Esboce ψ₀(x), ψ₁(x), ψ₂(x), focando em nós e simetria.</p>
-          </div>
+        <li>
+          <strong>Dia 55:</strong> Forma qualitativa das funções de onda.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Esboce ψ₀(x), ψ₁(x), ψ₂(x), focando em nós e simetria.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 56:</strong> Exercícios conceituais do oscilador quântico.
-          <div class="tooltip">
-            <p>Relacione estados quânticos e comportamento clássico para grandes n.</p>
-          </div>
+        <li>
+          <strong>Dia 56:</strong> Exercícios conceituais do oscilador quântico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Relacione estados quânticos e comportamento clássico para grandes n.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 9 -->
     <section>
       <h2>Semana 9 — Espaços de Hilbert e Notação Bra-Ket 🧠</h2>
-      <ul>
-        <li><strong>Dia 57:</strong> Vetores de estado |ψ⟩.
-          <div class="tooltip">
-            <p>Relacione a função de onda ψ(x) com o vetor abstrato |ψ⟩.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 57:</strong> Vetores de estado |ψ⟩.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Relacione a função de onda ψ(x) com o vetor abstrato |ψ⟩.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 58:</strong> Bras ⟨ψ| e produto interno.
-          <div class="tooltip">
-            <pre><code>&lt;φ|ψ&gt; = ∫ φ*(x) ψ(x) dx</code></pre>
-          </div>
+        <li>
+          <strong>Dia 58:</strong> Bras ⟨ψ| e produto interno.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>&lt;φ|ψ&gt; = ∫ φ*(x) ψ(x) dx</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 59:</strong> Normalização e ortogonalidade.
-          <div class="tooltip">
-            <pre><code>&lt;ψ|ψ&gt; = 1
+        <li>
+          <strong>Dia 59:</strong> Normalização e ortogonalidade.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>&lt;ψ|ψ&gt; = 1
 &lt;φₙ|φₘ&gt; = 0,   se n ≠ m</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 60:</strong> Mudança de base e decomposição em autovetores.
-          <div class="tooltip">
-            <p>Escreva |ψ⟩ como combinação linear de autovetores de um observável.</p>
-          </div>
+        <li>
+          <strong>Dia 60:</strong> Mudança de base e decomposição em autovetores.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Escreva |ψ⟩ como combinação linear de autovetores de um observável.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 61:</strong> Operadores em notação bra-ket.
-          <div class="tooltip">
-            <pre><code>A|ψ&gt; → novo vetor de estado
+        <li>
+          <strong>Dia 61:</strong> Operadores em notação bra-ket.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>A|ψ&gt; → novo vetor de estado
 &lt;φ|A|ψ&gt; → número complexo (expectativa ou amplitude)</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 62:</strong> Projeções e probabilidades de medida.
-          <div class="tooltip">
-            <p>Probabilidade de medir autovalor aₙ: |⟨aₙ|ψ⟩|².</p>
-          </div>
+        <li>
+          <strong>Dia 62:</strong> Projeções e probabilidades de medida.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Probabilidade de medir autovalor aₙ: |⟨aₙ|ψ⟩|².</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 63:</strong> Exercícios com notação bra-ket.
-          <div class="tooltip">
-            <p>Trabalhe com sistemas finitos (2 ou 3 estados) para fixar o formalismo.</p>
-          </div>
+        <li>
+          <strong>Dia 63:</strong> Exercícios com notação bra-ket.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Trabalhe com sistemas finitos (2 ou 3 estados) para fixar o formalismo.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 10 -->
     <section>
       <h2>Semana 10 — Spin 1/2 e Matrizes de Pauli 🧲</h2>
-      <ul>
-        <li><strong>Dia 64:</strong> Conceito de spin como grau de liberdade intrínseco.
-          <div class="tooltip">
-            <p>Discuta diferença entre spin e movimento orbital.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 64:</strong> Conceito de spin como grau de liberdade intrínseco.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Discuta diferença entre spin e movimento orbital.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 65:</strong> Base |↑⟩ e |↓⟩ para spin 1/2.
-          <div class="tooltip">
-            <pre><code>|↑z&gt; = [1, 0]ᵀ
+        <li>
+          <strong>Dia 65:</strong> Base |↑⟩ e |↓⟩ para spin 1/2.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>|↑z&gt; = [1, 0]ᵀ
 |↓z&gt; = [0, 1]ᵀ</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 66:</strong> Matrizes de Pauli σx, σy, σz.
-          <div class="tooltip">
-            <pre><code>σx = [[0, 1],
+        <li>
+          <strong>Dia 66:</strong> Matrizes de Pauli σx, σy, σz.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>σx = [[0, 1],
       [1, 0]]
 
 σy = [[0, -i],
@@ -496,128 +729,205 @@ Eₙ = (n² π² ħ²)/(2mL²)</code></pre>
 
 σz = [[1,  0],
       [0, -1]]</code></pre>
-          </div>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 67:</strong> Experimento de Stern–Gerlach (conceitual).
-          <div class="tooltip">
-            <p>Explique por que só aparecem dois resultados discretos.</p>
-          </div>
+        <li>
+          <strong>Dia 67:</strong> Experimento de Stern–Gerlach (conceitual).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Explique por que só aparecem dois resultados discretos.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 68:</strong> Medidas sucessivas em eixos diferentes.
-          <div class="tooltip">
-            <p>Analise o que acontece ao medir σx após σz, e vice-versa.</p>
-          </div>
+        <li>
+          <strong>Dia 68:</strong> Medidas sucessivas em eixos diferentes.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Analise o que acontece ao medir σx após σz, e vice-versa.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 69:</strong> Operador de spin e valores esperados.
-          <div class="tooltip">
-            <p>Calcule ⟨S_z⟩ para estados superpostos como α|↑⟩ + β|↓⟩.</p>
-          </div>
+        <li>
+          <strong>Dia 69:</strong> Operador de spin e valores esperados.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Calcule ⟨S_z⟩ para estados superpostos como α|↑⟩ + β|↓⟩.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 70:</strong> Exercícios com spin 1/2.
-          <div class="tooltip">
-            <p>Montar estados, calcular probabilidades e valores esperados para σx, σy, σz.</p>
-          </div>
+        <li>
+          <strong>Dia 70:</strong> Exercícios com spin 1/2.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Montar estados, calcular probabilidades e valores esperados para σx, σy, σz.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 11 -->
     <section>
       <h2>Semana 11 — Sistemas de Vários Estados e Emaranhamento 🔗</h2>
-      <ul>
-        <li><strong>Dia 71:</strong> Sistemas compostos e produto tensorial.
-          <div class="tooltip">
-            <p>Entenda como escrever estados de dois spins: |↑⟩⊗|↓⟩, etc.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 71:</strong> Sistemas compostos e produto tensorial.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Entenda como escrever estados de dois spins: |↑⟩⊗|↓⟩, etc.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 72:</strong> Estados separáveis vs emaranhados.
-          <div class="tooltip">
-            <p>Diferencie estados que podem ser escritos como produto e os que não podem.</p>
-          </div>
+        <li>
+          <strong>Dia 72:</strong> Estados separáveis vs emaranhados.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Diferencie estados que podem ser escritos como produto e os que não podem.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 73:</strong> Estados de Bell (visão qualitativa).
-          <div class="tooltip">
-            <pre><code>|Ψ⁻&gt; = (1/√2)(|↑↓&gt; - |↓↑&gt;)</code></pre>
-          </div>
+        <li>
+          <strong>Dia 73:</strong> Estados de Bell (visão qualitativa).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <pre><code>|Ψ⁻&gt; = (1/√2)(|↑↓&gt; - |↓↑&gt;)</code></pre>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 74:</strong> Medidas em sistemas emaranhados.
-          <div class="tooltip">
-            <p>Discuta correlações instantâneas entre medidas em duas partículas.</p>
-          </div>
+        <li>
+          <strong>Dia 74:</strong> Medidas em sistemas emaranhados.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Discuta correlações instantâneas entre medidas em duas partículas.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 75:</strong> Matriz densidade (ideia geral).
-          <div class="tooltip">
-            <p>Use ρ para descrever estados mistos e traço parcial.</p>
-          </div>
+        <li>
+          <strong>Dia 75:</strong> Matriz densidade (ideia geral).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Use ρ para descrever estados mistos e traço parcial.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 76:</strong> Decoerência (conceitual).
-          <div class="tooltip">
-            <p>Entenda como interação com o ambiente destrói coerência quântica.</p>
-          </div>
+        <li>
+          <strong>Dia 76:</strong> Decoerência (conceitual).
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Entenda como interação com o ambiente destrói coerência quântica.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 77:</strong> Exercícios conceituais de emaranhamento.
-          <div class="tooltip">
-            <p>Analise cenários simples com pares de spins correlacionados.</p>
-          </div>
+        <li>
+          <strong>Dia 77:</strong> Exercícios conceituais de emaranhamento.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Analise cenários simples com pares de spins correlacionados.</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Semana 12 -->
     <section>
       <h2>Semana 12 — Aplicações e Revisão Geral ⚙️</h2>
-      <ul>
-        <li><strong>Dia 78:</strong> Tunelamento quântico em barreiras de potencial.
-          <div class="tooltip">
-            <p>Interprete fisicamente por que há probabilidade de atravessar barreiras.</p>
-          </div>
+      <ul class="lista-padrao">
+        <li>
+          <strong>Dia 78:</strong> Tunelamento quântico em barreiras de potencial.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Interprete fisicamente por que há probabilidade de atravessar barreiras.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 79:</strong> Passo de potencial e reflexões/parciais.
-          <div class="tooltip">
-            <p>Compare coeficientes de reflexão e transmissão para diferentes energias.</p>
-          </div>
+        <li>
+          <strong>Dia 79:</strong> Passo de potencial e reflexões/parciais.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Compare coeficientes de reflexão e transmissão para diferentes energias.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 80:</strong> Partícula livre revisitada.
-          <div class="tooltip">
-            <p>Considere soluções tipo onda plana e pacotes de ondas para partículas livres.</p>
-          </div>
+        <li>
+          <strong>Dia 80:</strong> Partícula livre revisitada.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Considere soluções tipo onda plana e pacotes de ondas para partículas livres.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 81:</strong> Revisão de operadores, valores esperados e incerteza.
-          <div class="tooltip">
-            <p>Refaça cálculos de ⟨x⟩, ⟨p⟩, Δx e Δp para exemplos simples.</p>
-          </div>
+        <li>
+          <strong>Dia 81:</strong> Revisão de operadores, valores esperados e incerteza.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Refaça cálculos de ⟨x⟩, ⟨p⟩, Δx e Δp para exemplos simples.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 82:</strong> Revisão de poço infinito e oscilador harmônico.
-          <div class="tooltip">
-            <p>Liste semelhanças e diferenças entre esses dois sistemas centrais.</p>
-          </div>
+        <li>
+          <strong>Dia 82:</strong> Revisão de poço infinito e oscilador harmônico.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Liste semelhanças e diferenças entre esses dois sistemas centrais.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 83:</strong> Revisão de spin, bra-ket e emaranhamento.
-          <div class="tooltip">
-            <p>Monte um mapa mental ligando todos esses tópicos.</p>
-          </div>
+        <li>
+          <strong>Dia 83:</strong> Revisão de spin, bra-ket e emaranhamento.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Monte um mapa mental ligando todos esses tópicos.</p>
+            </div>
+          </details>
         </li>
-        <li><strong>Dia 84:</strong> Simulado final + plano de aprofundamento.
-          <div class="tooltip">
-            <p>Resolva um conjunto de problemas cobrindo todo o curso e trace próximos passos (livros, cursos, temas avançados).</p>
-          </div>
+        <li>
+          <strong>Dia 84:</strong> Simulado final + plano de aprofundamento.
+          <details>
+            <summary>📌 Ver detalhes</summary>
+            <div class="tipcontent">
+              <p>Resolva um conjunto de problemas cobrindo todo o curso e trace próximos passos (livros, cursos, temas avançados).</p>
+            </div>
+          </details>
         </li>
       </ul>
     </section>
 
-    <!-- Dicas finais -->
     <section>
       <h2>💡 Dicas Finais</h2>
-      <ul>
+      <ul class="lista-padrao">
         <li>Estude com papel e caneta: física e MQ fixam melhor escrevendo contas e deduções.</li>
         <li>Refaça exercícios sem olhar a solução depois de alguns dias.</li>
         <li>Mantenha um caderno só para fórmulas e ideias principais.</li>
         <li>Explique os conceitos em voz alta como se estivesse dando aula.</li>
       </ul>
     </section>
+
+    <div class="acoes-finais">
+      <a href="index.html" class="botao-home">← Voltar para Home</a>
+    </div>
   </main>
+
   <footer>
-    <p>Disciplina mata mais dúvida do que talento. Continue estudando.</p>
+    <span id="rodape-texto">Disciplina mata mais dúvida do que talento. Continue estudando.</span>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
