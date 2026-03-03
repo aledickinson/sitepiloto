@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calendário Semanal - Queima Gordura Visceral</title>
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../timer-toggle.css">
 </head>
 <body>
   <header>
@@ -226,6 +227,16 @@
     <span id="rodape-texto">Rodapé padrão</span>
   </footer>
 
-  <script src="../script.js"></script>
+  <div id="trainer-timer" role="group" aria-label="Cronômetro de treino">
+    <div class="timer-display" id="timerDisplay">00:00</div>
+    <div class="timer-controls" aria-label="Controles do cronômetro">
+      <button id="timerToggle" class="primary" type="button" aria-label="Iniciar" title="Iniciar">▶️</button>
+      <button id="timerReset" type="button" aria-label="Reiniciar" title="Reiniciar">🔄</button>
+    </div>
+  </div>
+
+
+    <script src="../timer-toggle.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
