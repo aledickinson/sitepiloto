@@ -1,0 +1,65 @@
+/* ===== Cronômetro flutuante (toggle) ===== */
+#trainer-timer{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 220px;
+  background: rgba(13,17,23,0.92);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+}
+
+#trainer-timer .timer-display{
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4px 0 10px;
+}
+
+#trainer-timer .timer-controls{
+  display: flex;
+  gap: 8px;
+}
+
+#trainer-timer button{
+  flex: 1;
+  padding: 10px 10px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  background: rgba(255,255,255,0.10);
+  color: var(--text, #e6edf3);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+#trainer-timer button.primary{
+  background: linear-gradient(90deg, var(--accent, #58a6ff), var(--accent-2, #2ea043));
+  color: #fff;
+}
+
+#trainer-timer button:active{
+  transform: translateY(1px);
+}
+
+#trainer-timer button:focus-visible{
+  outline: 2px solid rgba(88,166,255,0.75);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px){
+  #trainer-timer{
+    width: 200px;
+    right: 12px;
+    bottom: 12px;
+  }
+  #trainer-timer .timer-display{
+    font-size: 1.8rem;
+  }
+}
